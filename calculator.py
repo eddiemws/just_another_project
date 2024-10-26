@@ -1,11 +1,16 @@
 import tkinter as tk
 
 # Function to add a number or operator to the display
-
+def button_click(item):
+    current = display.get()
+    if item in '0123456789':
+        display.insert(tk.END, str(item))
+    elif item in '+-*/':
+        if current and current[-1] not in '+-*/':
+            display.insert(tk.END, str(item))
 
 # Function to clear the display
-def button_clear():
-    display.delete(0, tk.END)
+
 
 # Function to evaluate the expression
 def button_equal():
