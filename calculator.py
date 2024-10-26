@@ -10,20 +10,11 @@ def button_click(item):
             display.insert(tk.END, str(item))
 
 # Function to clear the display
-
+def button_clear():
+    display.delete(0, tk.END)
 
 # Function to evaluate the expression
-def button_equal():
-    try:
-        result = eval(display.get())
-        display.delete(0, tk.END)
-        display.insert(0, str(result))
-    except ZeroDivisionError:
-        display.delete(0, tk.END)
-        display.insert(0, "Error")
-    except Exception:
-        display.delete(0, tk.END)
-        display.insert(0, "Error")
+
 
 # Function to handle key presses
 def key_press(event):
