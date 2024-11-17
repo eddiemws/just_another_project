@@ -10,7 +10,8 @@ def button_click(item):
             display.insert(tk.END, str(item))
 
 # Function to clear the display
-
+def button_clear():
+    display.delete(0, tk.END)
 
 # Function to evaluate the expression
 def button_equal():
