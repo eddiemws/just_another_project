@@ -37,8 +37,7 @@ def key_press(event):
         button_clear()
 
 # Create the main window
-root = tk.Tk()
-root.title("Simple Calculator")
+
 
 # Define colors
 button_bg = '#f0f0f0'  # Light grey
