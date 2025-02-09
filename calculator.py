@@ -6,7 +6,8 @@ def button_click(item):
     if item in '0123456789':
         display.insert(tk.END, str(item))
     elif item in '+-*/':
-       
+        if current and current[-1] not in '+-*/':
+            display.insert(tk.END, str(item))
  
 
 # Function to clear the display
