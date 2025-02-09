@@ -2,6 +2,8 @@ import tkinter as tk
 
 # Function to add a number or operator to the display
 def button_click(item):
+    current = display.get()
+  
  
 
 # Function to clear the display
