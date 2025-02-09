@@ -1,7 +1,8 @@
 import tkinter as tk
 
 # Function to add a number or operator to the display
-
+def button_click(item):
+ 
 
 # Function to clear the display
 def button_clear():
